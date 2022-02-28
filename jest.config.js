@@ -19,7 +19,5 @@ module.exports = {
     '/node_modules/',
     '^.+\\.module\\.(css|sass|scss)$',
   ],
-  setupFilesAfterEnv: [
-    "<rootDir>/configFiles/setupTests.ts",
-  ]
-}
+  setupFilesAfterEnv: ['<rootDir>/configFiles/setupTests.ts'],
+};

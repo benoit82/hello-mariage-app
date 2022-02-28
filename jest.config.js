@@ -1,7 +1,11 @@
 module.exports = {
   collectCoverageFrom: [
     '**/*.{js,jsx,ts,tsx}',
+    '!*.config.js',
     '!**/*.d.ts',
+    '!**/.next/**',
+    '!**/configFiles/**',
+    '!**/coverage/**',
     '!**/node_modules/**',
   ],
   moduleNameMapper: {

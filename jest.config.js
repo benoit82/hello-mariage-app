@@ -6,6 +6,8 @@ module.exports = {
     '!**/.next/**',
     '!**/configFiles/**',
     '!**/coverage/**',
+    '!**/.storybook/**',
+    '!**/stories/**',
     '!**/node_modules/**',
   ],
   moduleNameMapper: {

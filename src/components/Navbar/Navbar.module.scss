@@ -1,0 +1,12 @@
+@import '@styles/variables.scss';
+
+.navbarContainer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: blue;
+
+  @media (min-width: $mobile-width) {
+    width: 80vw;
+  }
+}

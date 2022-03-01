@@ -1,4 +1,5 @@
 ## Getting Started
+
 Install all dependencies with `npm i`
 
 Then, run the development server:
@@ -16,7 +17,9 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Specific documentation
+
 run :
+
 ```bash
 npm run storybook
 ```

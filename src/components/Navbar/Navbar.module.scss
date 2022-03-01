@@ -2,7 +2,7 @@
 
 .navbarContainer {
   width: 100%;
-  min-height: 2rem;
+  min-height: 3rem;
   position: absolute;
   top: 0;
   background-color: blue;
@@ -10,6 +10,7 @@
 
   @media (min-width: $mobile-width) {
     width: 80vw;
+    min-height: 2rem;
   }
 
   .linkList {
@@ -19,6 +20,9 @@
     width: 50vw;
     margin: 0 auto;
     row-gap: 0.5rem;
+    & li {
+      text-align: center;
+    }
 
     @media (min-width: $mobile-width) {
       display: flex;
@@ -31,7 +35,13 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
+
+        @media (min-width: $mobile-width) {
+      display: none;
+      pointer-events: none;
+    }
   }
+
   .linkDisplay {
     display: flex;
   }

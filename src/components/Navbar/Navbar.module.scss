@@ -3,11 +3,10 @@
 .navbarContainer {
   width: 100vw;
   min-height: 4.25rem;
-  position: absolute;
-  top: 0;
   background-color: $pink-light;
   padding: 1rem;
   border-radius: $br-round-bottom;
+  align-self: center;
 
   @media (min-width: $mobile-width) {
     width: 80vw;

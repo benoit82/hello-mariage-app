@@ -2,11 +2,12 @@
 
 .navbarContainer {
   width: 100vw;
-  min-height: 3rem;
+  min-height: 4.25rem;
   position: absolute;
   top: 0;
-  background-color: blue;
+  background-color: $pink-light;
   padding: 1rem;
+  border-radius: $br-round-bottom;
 
   @media (min-width: $mobile-width) {
     width: 80vw;
@@ -29,17 +30,6 @@
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
-    }
-  }
-
-  .navBarBtn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-
-        @media (min-width: $mobile-width) {
-      display: none;
-      pointer-events: none;
     }
   }
 

@@ -3,6 +3,7 @@ import { FC, useState } from 'react';
 import classNames from 'classnames';
 
 import style from './Navbar.module.scss';
+import NavbarButton from '@components/NavbarButton/NavbarButton';
 
 const Navbar: FC = () => {
   const [displayMenu, setDisplayMenu] = useState<boolean>(true);
@@ -22,9 +23,7 @@ const Navbar: FC = () => {
         <li>Link 3</li>
         <li>Link 4</li>
       </ul>
-      <button className={style.navBarBtn} onClick={handleNavBarBtn}>
-        Menu
-      </button>
+      <NavbarButton handleClick={handleNavBarBtn} />
     </div>
   );
 };

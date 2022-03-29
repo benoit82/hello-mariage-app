@@ -24,6 +24,15 @@
       &.linkDisplay {
         display: inline-block;
       }
+      & a {
+        transition: color 2s;
+        &.activeLink {
+          color: $navbar-color-active-link;
+        }
+        &:hover {
+        color: $navbar-color-hover;
+      }
+      }
     }
     & li:first-child {
       display: inline-block;

@@ -5,6 +5,7 @@ import Image from 'next/Image';
 import Link from 'next/Link';
 
 import style from './Navbar.module.scss';
+import { useRouter } from 'next/router';
 
 interface NavBarLink {
   label: string;
@@ -14,11 +15,12 @@ interface NavBarLink {
 const Navbar: FC = () => {
   const [displayMenu, setDisplayMenu] = useState<boolean>(true);
   const handleNavBarBtn = () => setDisplayMenu(!displayMenu);
+  const router = useRouter();
   const menu: NavBarLink[] = [
-    { label: 'Thèmes', href: '#' },
-    { label: 'Faire une demande', href: '#' },
-    { label: 'Notre entreprise', href: '#' },
-    { label: 'Contact', href: '#' },
+    { label: 'Thèmes', href: '/#themes' },
+    { label: 'Faire une demande', href: '/#userRequest' },
+    { label: 'Notre entreprise', href: '/#whoAreWe' },
+    { label: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -44,7 +46,7 @@ const Navbar: FC = () => {
             })}
           >
             <Link href={href} passHref>
-              <a>{label}</a>
+              <a className={classNames({[style.activeLink]: router.pathname === href })}>{label}</a>
             </Link>
           </li>
         ))}

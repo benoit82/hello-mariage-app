@@ -5,10 +5,9 @@ describe('Home', () => {
   it('renders a heading', () => {
     render(<Home />);
 
-    const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
-    });
+    const homepageTitle = screen.getByRole('heading', {  name: /mariages à thème et sur mesure/i});
+    const homepageDescription = screen.getByRole('heading', {  name: /construisons ensemble votre projet/i});
 
-    expect(heading).toBeInTheDocument();
+    [homepageTitle, homepageDescription].forEach(element => expect(element).toBeInTheDocument());
   });
 });

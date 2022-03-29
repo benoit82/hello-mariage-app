@@ -2,8 +2,19 @@
 $mobile-width: 500px;
 
 // colors
-$pink-light: #c39bd3;
+$navbar-bg-color: #dd2f6a82;
 
 // border radius
 $br-default: 0.25rem;
 $br-round-bottom: 0 0 0.25rem 0.25rem;
+
+// mixin
+@mixin background($filename) {
+  background: {
+    image: url($filename);
+    repeat: no-repeat;
+    attachment: fixed;
+    size: cover;
+    position: center;
+  }
+}

@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  @include background('/img/bgwallpaper.jpg');
+  @include backgroundImage('/img/bgwallpaper.jpg');
 }
 
 a {

@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 import NavbarButton from '@components/NavbarButton/NavbarButton';
 import classNames from 'classnames';
-import Image from 'next/Image';
+import Image from 'next/image';
 import Link from 'next/Link';
 
 import style from './Navbar.module.scss';

@@ -46,7 +46,13 @@ const Navbar: FC = () => {
             })}
           >
             <Link href={href} passHref>
-              <a className={classNames({[style.activeLink]: router.pathname === href })}>{label}</a>
+              <a
+                className={classNames({
+                  [style.activeLink]: router.pathname === href,
+                })}
+              >
+                {label}
+              </a>
             </Link>
           </li>
         ))}

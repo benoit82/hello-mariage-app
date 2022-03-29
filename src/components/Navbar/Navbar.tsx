@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import NavbarButton from '@components/NavbarButton/NavbarButton';
 import classNames from 'classnames';
 import Image from 'next/image';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 import style from './Navbar.module.scss';
 import { useRouter } from 'next/router';

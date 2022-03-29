@@ -1,15 +1,9 @@
-import { Meta } from '@storybook/addon-docs';
-
-<Meta title="Documentation/Workflow" />
-
-# Documentation du projet
-
 ## Workflow
 
 ### Avant de commit :
 
 1. Avant de commit vers le dépôt distant, on format le code via la commande, pour uniformiser la synthaxe des fichiers : `npm run format`
-1.1. Vous pouvez vérifier le formatage actuel avec la commande : `npx prettier --check .`
+   1.1. Vous pouvez vérifier le formatage actuel avec la commande : `npx prettier --check .`
 2. Faire passer les tests en local
 
 ### Merger vers la branche `dev`:

@@ -1,7 +1,3 @@
-import { Meta } from '@storybook/addon-docs';
-
-<Meta title="Documentation/Introduction" />
-
 # Documentation du projet
 
 ## Informations

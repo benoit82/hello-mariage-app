@@ -3,20 +3,17 @@ import NavbarButton from '@components/NavbarButton/NavbarButton';
 import classNames from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
+import { NavLink } from '@interfaces/index';
 
 import style from './Navbar.module.scss';
 import { useRouter } from 'next/router';
 
-interface NavBarLink {
-  label: string;
-  href: string;
-}
 
 const Navbar: FC = () => {
   const [displayMenu, setDisplayMenu] = useState<boolean>(true);
   const handleNavBarBtn = () => setDisplayMenu(!displayMenu);
   const router = useRouter();
-  const menu: NavBarLink[] = [
+  const menu: NavLink[] = [
     { label: 'Thèmes', href: '/#themes' },
     { label: 'Faire une demande', href: '/#userRequest' },
     { label: 'Notre entreprise', href: '/#whoAreWe' },

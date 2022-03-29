@@ -6,3 +6,11 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.footer {
+  .footerLinks {
+    display: flex;
+    column-gap: 2rem;
+    list-style: none;
+  }
+}

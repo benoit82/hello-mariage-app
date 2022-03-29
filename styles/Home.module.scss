@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+.container {
+  flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    color: $homepage-color-title;
+
+    .description {
+      font-size: 1.3rem;
+      font-weight: bolder;
+    }
+}

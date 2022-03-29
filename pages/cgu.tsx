@@ -1,9 +1,9 @@
 import InfoPage from '@components/InfoPage';
 import { NextPage } from 'next';
 import Head from 'next/head';
-import policy from 'src/informations/policy';
+import cgu from 'src/informations/cgu';
 
-const Policy: NextPage = () => {
+const CGU: NextPage = () => {
   return (
     <>
       <Head>
@@ -13,9 +13,9 @@ const Policy: NextPage = () => {
           content="Politique de confidentialité privacy policy"
         />
       </Head>
-      <InfoPage>{policy}</InfoPage>
+      <InfoPage>{cgu}</InfoPage>
     </>
   );
 };
 
-export default Policy;
+export default CGU;

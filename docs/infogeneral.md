@@ -6,7 +6,7 @@ Le projet est découpé en plusieurs sous projets pour répondre au besoin clien
 
 - [L'application web (cette documentation)](https://github.com/benoit82/hello-mariage-app)
   - Responsable : Benoît Dubus
-- L'application backend/API, dashboard administration
+- [L'application backend/API, dashboard administration](https://github.com/ericJaslet/hello-mariage)
   - Responsable : Eric Jaslet
 - [L'application mobile Androïd](https://github.com/nicolaszanforlini/hello-mariage)
   - Responsables: Nicolas Zanforlini, Emmanuel Bebe

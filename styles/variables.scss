@@ -15,9 +15,9 @@ $br-default: 0.25rem;
 $br-round-bottom: 0 0 0.25rem 0.25rem;
 
 // mixins
-@mixin backgroundImage($filename) {
+@mixin backgroundImage($file) {
   background: {
-    image: url($filename);
+    image: url($file);
     repeat: no-repeat;
     attachment: fixed;
     size: cover;

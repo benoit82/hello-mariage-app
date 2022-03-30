@@ -1,9 +1,9 @@
 import '@styles/globals.scss';
 import style from '@styles/App.module.scss';
 import type { AppProps } from 'next/app';
-import Navbar from '@components/Navbar';
+import Navbar from '@/components/Navbar';
 import Head from 'next/head';
-import { NavLink } from '@interfaces/index';
+import { NavLink } from '@/interfaces/index';
 import Link from 'next/link';
 
 

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '@styles/Home.module.scss';
-import { TITLE_BASE } from 'src/informations/constants';
+import { TITLE_BASE } from '@/informations/constants';
 
 const Home: NextPage = () => {
   return (

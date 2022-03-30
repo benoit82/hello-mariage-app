@@ -1,5 +1,5 @@
-import InfoPage from '@components/InfoPage';
-import { InfoPageProps } from '@components/InfoPage/types';
+import InfoPage from '@/components/InfoPage';
+import { InfoPageProps } from '@/components/InfoPage/types';
 import { NextPage } from 'next';
 import policy from 'src/informations/pages/policy';
 

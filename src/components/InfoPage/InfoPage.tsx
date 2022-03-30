@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import { PropsWithChildren } from 'react';
-import { TITLE_BASE } from 'src/informations/constants';
+import { TITLE_BASE } from '@/informations/constants';
 import styles from './InfoPage.module.scss';
 import { InfoPageProps } from './types';
 

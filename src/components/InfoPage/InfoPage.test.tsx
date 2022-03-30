@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import cgu from '../../informations/cgu';
+import cgu from '../../informations/pages/cgu';
 import InfoPage from '.';
 
 describe('InfoPage', () => {

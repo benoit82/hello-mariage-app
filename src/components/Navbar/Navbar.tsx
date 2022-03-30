@@ -3,22 +3,15 @@ import NavbarButton from '@/components/NavbarButton/NavbarButton';
 import classNames from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
-import { NavLink } from '@/interfaces/index';
+import { useRouter } from 'next/router';
+import { menuNavBar } from '@/informations/constants';
 
 import style from './Navbar.module.scss';
-import { useRouter } from 'next/router';
-
 
 const Navbar: FC = () => {
   const [displayMenu, setDisplayMenu] = useState<boolean>(true);
   const handleNavBarBtn = () => setDisplayMenu(!displayMenu);
   const router = useRouter();
-  const menu: NavLink[] = [
-    { label: 'Thèmes', href: '/#themes' },
-    { label: 'Faire une demande', href: '/#userRequest' },
-    { label: 'Notre entreprise', href: '/#whoAreWe' },
-    { label: 'Contact', href: '/#contact' },
-  ];
 
   return (
     <div className={style.navbarContainer}>
@@ -35,7 +28,7 @@ const Navbar: FC = () => {
             </a>
           </Link>
         </li>
-        {menu.map(({ label, href }, index) => (
+        {menuNavBar.map(({ label, href }, index) => (
           <li
             key={index}
             className={classNames({

@@ -1,4 +1,4 @@
 export interface InfoPageProps {
-    pageTitle: string;
-    headDescription?: string;
+  pageTitle: string;
+  headDescription?: string;
 }

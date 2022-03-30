@@ -1,21 +1,14 @@
 import InfoPage from '@components/InfoPage';
+import { InfoPageProps } from '@components/InfoPage/types';
 import { NextPage } from 'next';
-import Head from 'next/head';
 import policy from 'src/informations/policy';
 
 const Policy: NextPage = () => {
-  return (
-    <>
-      <Head>
-        <title>Hello Mariage - Politique de confidentialité</title>
-        <meta
-          name="description"
-          content="Politique de confidentialité privacy policy"
-        />
-      </Head>
-      <InfoPage>{policy}</InfoPage>
-    </>
-  );
+    const props: InfoPageProps = {
+    headDescription: 'Politique de confidentialité privacy policy',
+    pageTitle: 'Hello Mariage - Politique de confidentialité'
+  }
+  return  <InfoPage {... props}>{policy}</InfoPage>;
 };
 
 export default Policy;

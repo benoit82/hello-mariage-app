@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app';
 import Navbar from '@/components/Navbar';
 import Head from 'next/head';
 import Link from 'next/link';
-import { footerLinks } from '@/informations/constants';
+import { footerLinks } from '@/utils/constants';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

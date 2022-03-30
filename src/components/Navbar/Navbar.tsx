@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { menuNavBar } from '@/informations/constants';
+import { menuNavBar } from '@/utils/constants';
 
 import style from './Navbar.module.scss';
 

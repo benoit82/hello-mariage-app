@@ -1,0 +1,33 @@
+// media size
+$mobile-width: 500px;
+
+// colors
+$navbar-bg-color: #dd2f6a82;
+$navbar-color-hover: #5c0d5cf5;
+$navbar-color-active-link: #7b077bf5;
+
+$homepage-color-title: #dd2f6a;
+
+$bg-color-white: #ffffff82;
+
+// border radius
+$br-default: 0.25rem;
+$br-round-bottom: 0 0 0.25rem 0.25rem;
+
+// mixins
+@mixin backgroundImage($file) {
+  background: {
+    image: url($file);
+    repeat: no-repeat;
+    attachment: fixed;
+    size: cover;
+    position: center;
+  }
+}
+
+@mixin infoBlock {
+  background-color: $bg-color-white;
+  padding: 2rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}

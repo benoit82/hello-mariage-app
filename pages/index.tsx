@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '@styles/Home.module.scss';
 import { TITLE_BASE } from '@/utils/constants';
+import nature from 'public/img/nature.jpeg'
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,9 @@ const Home: NextPage = () => {
 
       <h1>Mariage à thème et sur mesure</h1>
       <p className={styles.description}>Construisons ensemble votre projet</p>
+      <div className="images">
+        <img src={nature} alt="photo" srcSet={`${nature} 2x, ${nature} 400px,`} />
+      </div>
     </div>
   );
 };

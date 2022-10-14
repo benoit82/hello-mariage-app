@@ -13,7 +13,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Script type="text/javascript" src="https://try.abtasty.com/7f9323338fc47455049311b574d3e9d0.js"></Script>
+      <Script
+        type="text/javascript"
+        src="https://try.abtasty.com/7f9323338fc47455049311b574d3e9d0.js"
+      ></Script>
 
       <Navbar />
 

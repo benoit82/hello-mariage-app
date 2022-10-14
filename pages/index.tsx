@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '@styles/Home.module.scss';
 import { TITLE_BASE } from '@/utils/constants';
-import nature from 'public/img/nature.jpeg'
+import nature from 'public/img/nature.jpeg';
 import Image from 'next/image';
 
 const Home: NextPage = () => {
@@ -16,14 +16,23 @@ const Home: NextPage = () => {
       <h1>Mariage à thème et sur mesure</h1>
       <p className={styles.description}>Construisons ensemble votre projet</p>
       <div className="images">
-            <Image
-            alt="nature"
-      src={nature}
-      layout="fill"
-      sizes="(max-width: 768px) 100vw,
+        <Image
+          alt="nature"
+          src={nature}
+          layout="fill"
+          sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
-    />
+        />
+      </div>
+      <div className="youtube-iframe-video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/9IOBFl5SQVM?controls=0"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
       </div>
     </div>
   );

@@ -17,10 +17,32 @@ const Home: NextPage = () => {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
+          src="https://www.youtube.com/embed/fFOzbEN-6ms?controls=0"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          aria-disabled="true"
         ></iframe>
+        <div>
+          <p>une iframe</p>
+          <iframe id="myIframe" srcDoc="
+        <!DOCTYPE html>
+        <html lang='fr'>
+        <head>
+            <meta charset='UTF-8'>
+            <title>Contenu de l'iframe</title>
+        </head>
+        <body>
+            <h2>Bienvenue dans l'iframe</h2>
+            <p>Voici quelques éléments inclus dans l'iframe :</p>
+            <ul>
+                <li>Élément 1</li>
+                <li>Élément 2</li>
+                <li>Élément 3</li>
+            </ul>
+        </body>
+        </html>
+    " width="600" height="400"></iframe>
+        </div>
       </div>
     </div>
   );

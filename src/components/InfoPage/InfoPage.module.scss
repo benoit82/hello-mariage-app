@@ -3,4 +3,7 @@
 .container {
   @include infoBlock();
   flex-grow: 1;
+  iframe {
+    border: 2px solid #BADA55;
+  }
 }

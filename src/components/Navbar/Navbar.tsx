@@ -1,9 +1,8 @@
 import { FC, useState } from 'react';
 import NavbarButton from '@/components/NavbarButton/NavbarButton';
 import classNames from 'classnames';
-import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import { menuNavBar } from '@/utils/constants';
 
 import style from './Navbar.module.scss';
@@ -17,16 +16,12 @@ const Navbar: FC = () => {
     <div className={style.navbarContainer}>
       <ul className={style.linkList}>
         <li>
-          <Link href="/" passHref>
-            <a>
-              <Image
-                src={'/img/logo-hellomariage.png'}
-                alt={'logo Hello Mariage'}
-                height={'70px'}
-                width={'70px'}
-              />
-            </a>
-          </Link>
+            <img
+              src="/img/logo-hellomariage.png"
+              alt="logo Hello Mariage"
+              height="70px"
+              width="70px"
+            />
         </li>
         {menuNavBar.map(({ label, href }, index) => (
           <li
